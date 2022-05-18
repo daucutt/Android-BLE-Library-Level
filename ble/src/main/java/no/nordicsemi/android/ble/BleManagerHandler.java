@@ -1577,7 +1577,8 @@ abstract class BleManagerHandler extends RequestHandler {
 	 * {@link BleManager#refreshDeviceCache()} request was executed, which has invalidated cached
 	 * services.
 	 */
-	protected abstract void onServicesInvalidated();
+	protected  void onServicesInvalidated(){
+	}
 
 	private void notifyDeviceDisconnected(@NonNull final BluetoothDevice device, final int status) {
 		final boolean wasConnected = connected;
